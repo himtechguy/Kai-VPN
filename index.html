@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050505">
+  <title>KAI VPN — Private connection</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">K</span><span>KAI VPN</span></a>
+    <span class="status-pill"><i></i> PRIVATE NETWORK</span>
+  </header>
+
+  <main class="shell">
+    <section class="intro">
+      <p class="eyebrow">YOUR CONNECTION. YOUR CONTROL.</p>
+      <h1>Browse beyond<br><span>boundaries.</span></h1>
+      <p class="sub">A simple home for your secure connection.</p>
+    </section>
+
+    <section class="vpn-card" aria-label="VPN connection panel">
+      <div class="card-head">
+        <span class="muted-label">CONNECTION STATUS</span>
+        <span id="statusText" class="state">NOT CONNECTED</span>
+      </div>
+      <div class="orb-wrap">
+        <div id="orb" class="orb"><span class="orb-core">K</span></div>
+      </div>
+      <button id="connectBtn" class="connect-btn" type="button">CONNECT</button>
+      <p id="message" class="message" aria-live="polite">Choose a location to prepare your connection.</p>
+      <div class="details">
+        <div><span class="muted-label">LOCATION</span><strong id="locationText">Automatic</strong></div>
+        <div><span class="muted-label">PROTOCOL</span><strong>WireGuard (planned)</strong></div>
+      </div>
+      <label class="select-label" for="serverSelect">SERVER LOCATION</label>
+      <select id="serverSelect">
+        <option value="Automatic">Automatic</option>
+        <option value="South Africa">South Africa</option>
+        <option value="Japan">Japan</option>
+        <option value="Germany">Germany</option>
+        <option value="United States">United States</option>
+      </select>
+      <p class="notice">Preview only: this website does not create a VPN tunnel yet. A real KAI VPN server and Android VPN client must be connected before the button can route internet traffic.</p>
+    </section>
+
+    <section class="features">
+      <article><span class="feature-icon">01</span><div><h2>Simple control</h2><p>One clear place to manage your connection.</p></div></article>
+      <article><span class="feature-icon">02</span><div><h2>Global locations</h2><p>Server locations will appear as real servers are added.</p></div></article>
+      <article><span class="feature-icon">03</span><div><h2>Built for mobile</h2><p>Designed to work comfortably on your phone.</p></div></article>
+    </section>
+  </main>
+
+  <footer><span>© <span id="year"></span> KAI VPN</span><span>CONNECT WITHOUT BORDERS.</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
